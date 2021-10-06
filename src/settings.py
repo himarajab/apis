@@ -107,17 +107,28 @@ DATABASES = {
 }
 
 
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 4,
-    # overwrite error labels representation
-    'NON_FIELD_ERRORS_KEY':'error',
+# REST_FRAMEWORK = {
+#     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+#     'PAGE_SIZE': 4,
+#     # overwrite error labels representation
+#     'NON_FIELD_ERRORS_KEY':'error',
 
-     'DEFAULT_AUTHENTICATION_CLASSES': (
+#      'DEFAULT_AUTHENTICATION_CLASSES': (
         
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
+#         'rest_framework.authentication.TokenAuthentication',
+#     )
+# }
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+    'PAGE_SIZE': 10
 }
+
+
+
 
 
 
