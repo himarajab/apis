@@ -30,7 +30,7 @@ DEBUG = True
 
 AUTH_USER_MODEL = 'authentication.User'
 
-ALLOWED_HOSTS = ['serene-sierra-29658.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['https://serene-sierra-29658.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
