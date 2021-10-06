@@ -30,7 +30,7 @@ DEBUG = True
 
 AUTH_USER_MODEL = 'authentication.User'
 
-ALLOWED_HOSTS = ['sheltered-earth-87910.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['morning-meadow-94295.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
